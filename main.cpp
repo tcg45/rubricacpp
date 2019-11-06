@@ -6,18 +6,25 @@ void eliminaContatto();
 void stampaAgenda();
 
 int main(){
-  string scelta;
+  int scelta;
   menu();
   cout << "Scegli un'opzione: ";
   cin >> scelta;
+  do{
+    menu();
+    cout << "Scegli un'opzione: ";
+    cin >> scelta;
+    //struttura di scelta
+  }
+  while(scelta != 4);
 }
 
 void menu(){
   cout << "Benvenuto nella rubrica \n";
-  cout << "A) Inserisci contatto" << endl;
-  cout << "B) Elimina contatto" << endl;
-  cout << "C) Lista contatto" << endl;
-  cout << "D) Esci" << endl;
+  cout << "1) Inserisci contatto" << endl;
+  cout << "2) Elimina contatto" << endl;
+  cout << "3) Lista contatto" << endl;
+  cout << "4) Esci" << endl;
 }
 
   
