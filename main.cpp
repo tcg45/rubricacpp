@@ -13,7 +13,6 @@ void inserisciContatto(string nome,string cognome,string numero){
       contatti[i][2]=numero;
       break;
     }
-
   }
 
   } else {
@@ -32,7 +31,7 @@ void stampaAgenda(){
   cout << "Elenco dei contatti"<<""<<endl;
   for(int i=0;i<20;i++){
    if(contatti[i][0] != "" && contatti[i][3]!="no"){
-    cout << i+1 <<")"<< "Nome:"<< "  "<<contatti[i][0] <<"  "<< "Cognome:"<<"  "<< contatti[i][1]<<"  "<< "Numero:"<<"  "<< contatti[i][2] << endl;
+    cout << i+1 <<") "<< "Nome:"<< "  "<<contatti[i][0] <<"  "<< "Cognome:"<<"  "<< contatti[i][1]<<"  "<< "Numero:"<<"  "<< contatti[i][2] << endl;
     
       }
       else if(contatti[i][3]=="no"){
