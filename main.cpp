@@ -27,17 +27,3 @@ void menu(){
   cout << "4) Esci" << endl;
 }
 
-  
-
-/*
-inserisciContatto
-eliminaContatto
-stampaAgenda
-
-MAIN
-void scriviMenu
-
-string addressbook[20] = {
-
-}
-*/
